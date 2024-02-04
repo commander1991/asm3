@@ -1,0 +1,25 @@
+.border-custom {
+    border: 10px solid;
+}
+
+@media only screen and (min-width: 992px) {
+    .row1-height {
+        height: 650px;
+    }
+
+    .row2-height {
+        height: 350px;
+    }
+
+    .row3-height {
+        height: 1000px;
+    }
+
+    .round {
+        width: 70px;
+        border: 1px solid rgb(139, 90, 208);
+        background-color: rgb(139, 90, 208);
+        border-radius: 50%;
+
+    }
+}

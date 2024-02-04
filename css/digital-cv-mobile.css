@@ -1,0 +1,31 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 550px;
+
+    }
+
+    .row {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 550px;
+    }
+
+    .col-3 {
+        width: 550px;
+    }
+
+    .round {
+        width: 70px;
+        border: 1px solid rgb(139, 90, 208);
+        background-color: rgb(139, 90, 208);
+        /* Màu và độ dày đường viền */
+        padding: 10px;
+        /* Khoảng cách từ nội dung đến đường viền */
+        border-radius: 50%;
+        /* Đường viền tròn */
+    }
+}
