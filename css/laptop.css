@@ -1,15 +1,15 @@
+/* Reset default margin, font, and box-sizing for all elements */
 * {
-    /* config for all page */
     margin: 0px;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     color: #6c757d;
 }
 
+/* Styling for the banner section */
 #banner {
-    /* background will be expand screen*/
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* Overlay gradient and background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(../images/banner.jpg);
     background-size: cover;
     background-position: center top;
@@ -17,13 +17,13 @@
     height: 400px;
 }
 
+/* Additional spacing for text within the banner */
 .text-banner {
-    /* text go down for 100px */
     padding-top: 100px;
 }
 
+/* Styling for the main container */
 .container {
-    /* container the content */
     min-width: 750px;
     width: auto;
     height: auto;
@@ -33,83 +33,69 @@
     box-sizing: border-box;
 }
 
+/* Background color styling for grey background */
 .bg-grey {
     background: whitesmoke;
 }
 
+/* Styling for a wrapper element */
 .wrapper {
-    /* hiding info before submit email */
     position: relative;
     width: 400px;
     height: 400px;
     background: transparent;
 }
 
+/* Display style modifications for active wrapper elements */
 .wrapper.active {
-    /* show personal info */
-    display: contents
+    display: contents;
 }
 
+/* Display style modifications for form-check-email active wrapper */
 .wrapper.form-check-email.active {
-    /* if input availid, form check display none */
-    display: none
+    display: none;
 }
 
+/* Styling for hiding elements */
 .hide {
-    display: none
-}
-
-/* hide text view more  */
-.hidden-text-1 {
     display: none;
-    color: gray;
 }
 
-.hidden-text-2 {
-    display: none;
-    color: gray;
-}
-
-.hidden-text-3 {
-    display: none;
-    color: gray;
-}
-
-.hidden-text-4 {
-    display: none;
-    color: gray;
-}
-
-.hidden-text-5 {
-    display: none;
-    color: gray;
-}
-
+/* Styling for hidden text with grey color */
+.hidden-text-1,
+.hidden-text-2,
+.hidden-text-3,
+.hidden-text-4,
+.hidden-text-5,
 .hidden-text-6 {
     display: none;
     color: gray;
 }
 
+/* Styling for job column elements */
 .col-job {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
 
+/* Styling for card header */
 .card-header {
     background-color: white !important;
     border-bottom: white !important;
 }
 
-/* seting only for laptop mode */
+
+/* Media query for screens with a minimum width of 992px */
 @media only screen and (min-width: 992px) {
 
-    /* banner full width: screen; */
+    /* Styling for the banner section on larger screens */
     .banner {
         position: relative;
         text-align: center;
     }
 
+    /* Styling for the banner image on larger screens */
     .banner-img {
         width: auto;
         height: 400px;
@@ -121,17 +107,19 @@
         text-align: center;
     }
 
-    /* nav bar have name/avatar */
+    /* Styling for the navigation bar on larger screens */
     .nav-bar {
         position: relative;
         display: inline;
     }
 
+    /* Styling for navigation items on larger screens */
     .nav-item {
         cursor: pointer;
         color: #6c757d;
     }
 
+    /* Styling for the avatar image on larger screens */
     .avatar {
         border: 15px solid;
         border-color: azure;
@@ -144,6 +132,7 @@
         transform: translate(-50%, -50%);
     }
 
+    /* Styling for the target section on larger screens */
     #target {
         background-color: whitesmoke;
         padding-top: 50px;
@@ -152,13 +141,14 @@
         text-align: left;
     }
 
+    /* Styling for the personal-info section on larger screens */
     #personal-info {
         background-color: oldlace;
         padding-top: 50px;
         height: 370px;
     }
 
-    /* building level template for job/skill */
+    /* Styling for blue level display */
     .level-blue {
         display: inline-block;
         border: 3px solid;
@@ -168,6 +158,7 @@
         margin: 5px;
     }
 
+    /* Styling for grey level display */
     .level-grey {
         display: inline-block;
         border: 3px solid;
@@ -177,6 +168,7 @@
         margin: 5px;
     }
 
+    /* Styling for the year element */
     .year {
         border: 1px;
         background-color: deepskyblue;
@@ -186,20 +178,23 @@
         font-weight: bold;
     }
 
-    /* css for certificate */
+    /* Styling for middle certificate separator */
     .mid-cer {
         border-left: 1px solid;
         color: #d6c08d;
     }
 
+    /* Styling for certificate images */
     .img-cer {
         width: 200px;
     }
 
+    /* Styling for certificate text font size */
     .font-cer {
         font-size: 14px;
     }
 
+    /* Styling for job column elements on larger screens */
     .col-job {
         width: calc(33.33% - 20px);
     }

@@ -1,10 +1,12 @@
-/* config css for tablet mode */
-@media only screen and (min-width: 600px) and (max-width:992px) {
+/* Media query for screens with a width between 600px and 992px */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
 
+    /* Adjust container width for better responsiveness */
     .container {
         width: 900px;
     }
 
+    /* Styling for the banner section on medium screens */
     #banner {
         background:
             linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -15,17 +17,19 @@
         height: 250px;
     }
 
+    /* Additional spacing for text within the medium-sized banner */
     .text-banner {
         padding-top: 50px;
     }
 
+    /* Styling for the banner image on medium screens */
     .banner-img {
         overflow: hidden;
         filter: contrast(40%);
         position: relative;
-
     }
 
+    /* Styling for the responsive banner image */
     .img-banner {
         position: relative;
         width: 100%;
@@ -33,9 +37,9 @@
         object-fit: cover;
         object-position: 55%;
         transform: translate(0%, 5%);
-
     }
 
+    /* Styling for centered elements within the banner */
     .centered {
         position: absolute;
         left: 50%;
@@ -43,45 +47,54 @@
         transform: translate(-50%, -50%);
     }
 
+    /* Hide avatar on medium screens */
     .avatar {
         display: none;
     }
 
+    /* Centered alignment and padding for navigation items on medium screens */
     .nav-item {
         text-align: center;
         padding: 30px;
     }
 
+    /* Hide navigation item images on medium screens */
     .nav-item-img {
         visibility: hidden;
-        display: none
+        display: none;
     }
 
+    /* Adjust width for wrapper element on medium screens */
     .wrapper {
         width: auto;
     }
 
+    /* Styling for the target section on medium screens */
     #target {
         background-color: whitesmoke;
         padding-left: 20px;
         padding-top: 20px;
     }
 
+    /* Styling for the personal-info section on medium screens */
     #personal-info {
         background-color: oldlace;
         padding-top: 20px;
         padding-left: 20px;
     }
 
+    /* Hide viewmore elements on medium screens */
     .viewmore {
         display: none;
     }
 
+    /* Styling for middle certificate separator on medium screens */
     .mid-cer {
         border-left: 1px solid;
         color: #d6c08d;
     }
 
+    /* Styling for blue level display on medium screens */
     .level-blue {
         display: inline-block;
         border: 3px solid;
@@ -91,6 +104,7 @@
         margin: 5px;
     }
 
+    /* Styling for grey level display on medium screens */
     .level-grey {
         display: inline-block;
         border: 3px solid;
@@ -100,6 +114,7 @@
         margin: 5px;
     }
 
+    /* Styling for the year element on medium screens */
     .year {
         border: 1px;
         background-color: deepskyblue;
@@ -111,48 +126,49 @@
         width: 80px;
     }
 
+    /* Styling for certificate images on medium screens */
     .img-cer {
         width: 100px;
     }
 
+    /* Styling for certificate text font size on medium screens */
     .font-cer {
         font-size: 8px;
     }
 
+    /* Adjust width for job column elements on medium screens */
     .col-job {
         width: calc(50% - 20px);
     }
 
-    /* re order job tab */
+    /* Custom order and width adjustments for specific job columns on medium screens */
     #first {
         order: 1;
-        width: calc(50% - 20px)
+        width: calc(50% - 20px);
     }
 
     #second {
         order: 4;
-        width: calc(50% - 20px)
+        width: calc(50% - 20px);
     }
 
     #third {
         order: 2;
-        width: calc(50% - 20px)
+        width: calc(50% - 20px);
     }
 
     #fourth {
         order: 6;
-        width: calc(50% - 20px)
+        width: calc(50% - 20px);
     }
 
     #fifth {
         order: 5;
-        width: calc(50% - 20px)
+        width: calc(50% - 20px);
     }
 
     #sixth {
         order: 3;
-        width: calc(50% - 20px)
+        width: calc(50% - 20px);
     }
-
-
 }
