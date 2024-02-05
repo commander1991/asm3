@@ -1,4 +1,6 @@
+/* config css for tablet mode */
 @media only screen and (min-width: 600px) and (max-width:992px) {
+
     .container {
         width: 900px;
     }
@@ -121,13 +123,14 @@
         width: calc(50% - 20px);
     }
 
+    /* re order job tab */
     #first {
         order: 1;
         width: calc(50% - 20px)
     }
 
     #second {
-        order: 3;
+        order: 4;
         width: calc(50% - 20px)
     }
 
@@ -137,19 +140,19 @@
     }
 
     #fourth {
-        order: 5;
-        width: calc(50% - 20px)
-    }
-
-    #fifth {
         order: 6;
         width: calc(50% - 20px)
     }
 
-    #sixth {
-        order: 4;
+    #fifth {
+        order: 5;
         width: calc(50% - 20px)
     }
 
-    
+    #sixth {
+        order: 3;
+        width: calc(50% - 20px)
+    }
+
+
 }

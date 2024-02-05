@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- insert style, icon, bootstrap -->
 	<link rel="stylesheet" href="./css/laptop.css">
 	<link rel="stylesheet" href="./css/tablet.css">
 	<link rel="stylesheet" href="./css/mobile.css">
@@ -17,6 +18,7 @@
 </head>
 
 <body>
+	<!-- banner template, text on middle template -->
 	<section id="banner">
 		<div class="container">
 			<div class="banner">
@@ -27,8 +29,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- middle navigation, name/avatar in center -->
 	<section id="navigation">
-		<div class="nav-bar">
+		<div class="nav-bar" style="font-size: small;">
 			<ul class="nav justify-content-center ">
 				<li class="nav-item p-4 border-start">
 					<div>THÔNG TIN
@@ -47,7 +50,7 @@
 							<div class="text-center" style="font-size: 13px; color: #a9a9a9">Fulstack Developer
 							</div>
 						</div>
-						<img src="./images/avatar.jpg" alt="avatar" class="avatar" style="visibility: hidden;">
+						<img src="./images/avatar.jpg" alt="avatar" class="avatar">
 					</a>
 				</li>
 				<li class="nav-item p-4 border-start">
@@ -63,6 +66,7 @@
 			</ul>
 		</div>
 	</section>
+	<!-- divided by 2 columns in laptop and tablet mode, 1 column in mobile mode-->
 	<section id="target-info">
 		<div class="container">
 			<div class="row">
@@ -77,11 +81,13 @@
 						bản thân, cũng như hoàn thành tốt nhất công việc được giao.
 					</p>
 				</div>
+				<!-- input email to see personal info -->
 				<div class="col" id="personal-info">
 					<h1 class="section-title">Thông tin cá nhân</h1>
 					<div class="wrapper">
 						<div class="form-check-email">
 							<form id="form" action="#">
+								<!-- email checking -->
 								<div class=" inputBox">
 									<label class="form-label" for="email">Email address</label>
 									<input type="email" class="form-control" id="email" name="email"
@@ -113,25 +119,29 @@
 			</div>
 		</div>
 	</section>
+	<!-- 3 cols in laptop, 2 cols in tablet, 1 col in mobile -->
 	<section id="job-info" class="py-4">
 		<div class="container mt-3">
 			<div class="container-fluid">
-				<div class="row justify-content-center" id="masonry-control">
+				<div class="row justify-content-center" id="job-container">
 					<div class="col-sm-6 col-lg-4 mb-4" id="first">
 						<div class="card" style="width: 100%;">
 							<div class="card-header">
+								<!-- acordion for show/hide info -->
 								<div class="accordion accordion-flush">
 									<div class="accordion-item">
 										<div class="accordion-header">
+											<!-- on mouse over and on mouse out for show/hide view more text -->
 											<div class="collapsed" onclick="toggleContent('1')"
 												onmouseover="showText('1')" onmouseout="hideText('1')" type="button"
 												data-bs-toggle="collapse" data-bs-target="#flush-collapse1"
-												aria-expanded="false" aria-controls="flush-collapse1">
+												aria-expanded="false" aria-controls="flush-collapse1" id="collapse">
 												<h4>Kinh nghiệm
 													<span class="ms-5"><i class=ic-toolbox
 															style="scale: 150%;"></i></span>
 												</h4>
-												<div class="btn btn-warning viewmore">
+												<div class="btn btn-warning viewmore" id="viewmore1"
+													style="display: none">
 													<h6 id="hiddenText1" class="hidden-text-1">
 														<i class="fa-solid fa-caret-down me-1"></i>View more
 													</h6>
@@ -141,7 +151,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
+							<div class="ok" style="border-top: white;">
 								<div id="flush-collapse1" class="accordion-collapse collapse"
 									data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">
@@ -185,7 +195,8 @@
 													<span class="ms-5"><i class=ic-pencil
 															style="scale: 150%;"></i></span>
 												</h4>
-												<div class="btn btn-warning viewmore">
+												<div class="btn btn-warning viewmore" id="viewmore2"
+													style="display: none">
 													<h6 id="hiddenText2" class="hidden-text-2">
 														<i class="fa-solid fa-caret-down me-1"></i>View more
 													</h6>
@@ -195,7 +206,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
+							<div>
 								<div id="flush-collapse2" class="accordion-collapse collapse"
 									data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">
@@ -240,7 +251,8 @@
 													<span class="ms-5"><i class=ic-toolbox
 															style="scale: 150%;"></i></span>
 												</h4>
-												<div class="btn btn-warning viewmore">
+												<div class="btn btn-warning viewmore" id="viewmore3"
+													style="display: none">
 													<h6 id="hiddenText3" class="hidden-text-3">
 														<i class="fa-solid fa-caret-down me-1"></i>View more
 													</h6>
@@ -250,7 +262,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
+							<div>
 								<div id="flush-collapse3" class="accordion-collapse collapse"
 									data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">
@@ -286,7 +298,8 @@
 													<span class="ms-5"><i class=ic-telescope
 															style="scale: 150%;"></i></span>
 												</h4>
-												<div class="btn btn-warning viewmore">
+												<div class="btn btn-warning viewmore" id="viewmore4"
+													style="display: none">
 													<h6 id="hiddenText4" class="hidden-text-4">
 														<i class="fa-solid fa-caret-down me-1"></i>View more
 													</h6>
@@ -296,7 +309,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
+							<div>
 								<div id="flush-collapse4" class="accordion-collapse collapse"
 									data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">
@@ -341,7 +354,8 @@
 												<h4>Ngôn ngữ
 													<span class="ms-5"><i class=ic-mic style="scale: 150%;"></i></span>
 												</h4>
-												<div class="btn btn-warning viewmore">
+												<div class="btn btn-warning viewmore" id="viewmore5"
+													style="display: none">
 													<h6 id="hiddenText5" class="hidden-text-5">
 														<i class="fa-solid fa-caret-down me-1"></i>View more
 													</h6>
@@ -351,7 +365,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
+							<div>
 								<div id="flush-collapse5" class="accordion-collapse collapse"
 									data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">
@@ -373,7 +387,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="col-sm-6 col-lg-4 mb-4" id="sixth">
 						<div class="card" style="width: 100%;">
 							<div class="card-header">
@@ -388,7 +401,8 @@
 													<span class="ms-5"><i class=ic-tools-2
 															style="scale: 150%;"></i></span>
 												</h4>
-												<div class="btn btn-warning viewmore">
+												<div class="btn btn-warning viewmore" id="viewmore6"
+													style="display: none">
 													<h6 id="hiddenText6" class="hidden-text-6">
 														<i class="fa-solid fa-caret-down me-1"></i>View more
 													</h6>
@@ -398,7 +412,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="card-body">
+							<div>
 								<div id="flush-collapse6" class="accordion-collapse collapse"
 									data-bs-parent="#accordionFlushExample">
 									<div class="accordion-body">
@@ -438,6 +452,7 @@
 			</div>
 		</div>
 	</section>
+	<!-- set grid for text and picture -->
 	<section id="certificate" class=" py-4 bg-grey">
 		<div class="container pb-3">
 			<h1 class="section-title " style="padding-top: 20px; padding-left: 20px;">
@@ -450,7 +465,7 @@
 							<img src="./images/Cert_WEB.png" class="img-cer">
 						</div>
 						<div class="col-7 font-cer">
-							<strong>ỨNG CHỈ LẬP TRÌNH WEB - FUNIX</strong>
+							<strong>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</strong>
 							<br />
 							- Chứng chỉ thuộc chương trình CCDN<br />
 							- GPA: 8.6
@@ -503,6 +518,7 @@
 			</div>
 		</div>
 	</section>
+	<!-- use table and set grid, col for project -->
 	<section id="project" class="py-4">
 		<div class="container">
 			<h1 class="section-title" style="padding: 20px;">
@@ -513,27 +529,27 @@
 					<div class="col border">
 						<div class="row">
 							<div class="card">
-								<a href="./digital-cv.html">
-									<img src="./images/project_1.png" class="card-img-top">
-								</a>
+								<img src="./images/project_1.png" class="card-img-top">
 							</div>
-							<div class="card-body border-bottom">
-								CV CÁ NHÂN
-							</div>
+							<a href="./digital-cv.html">
+								<div class="card-body border-bottom">
+									CV CÁ NHÂN
+								</div>
+							</a>
 							<div class="card-body">
-								<div class="row">
-									<div class=" mx-3 col-3 year">
+								<div class="row align-items-center">
+									<div class="col-3 year mobile-align-items-center">
 										2021
 									</div>
-									<div class="col">
-										<div class="space-cv">
+									<div class="col-9 mobile-align-items-center" style="font-size: 15px;">
+										<span class="col-sm-10 space-cv px-3">
 											<i class="fa-solid fa-user"></i>
 											<span>FUNiX</span>
-										</div>
-										<div class="space-cv">
+										</span>
+										<span class="col-sm-10 space-cv text-nowrap ps-3">
 											<i class="fa-regular fa-lightbulb"></i>
 											<span>Developer</span>
-										</div>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -567,27 +583,27 @@
 					<div class="col border">
 						<div class="row">
 							<div class="card">
-								<a href="./digital-cv.html">
-									<img src="./images/project_2.png" class="card-img-top">
-								</a>
+								<img src="./images/project_2.png" class="card-img-top">
 							</div>
-							<div class="card-body border-top">
-								TRANG WEB QUẢN LÝ THÚ CƯNG
-							</div>
-							<div class="card-body border-top">
-								<div class="row">
-									<div class=" mx-3 col-3 year">
+							<a href="./digital-cv.html">
+								<div class="card-body border-bottom">
+									TRANG WEB QUẢN LÝ THÚ CƯNG
+								</div>
+							</a>
+							<div class="card-body">
+								<div class="row align-items-center">
+									<div class="col-3 year mobile-align-items-center">
 										2021
 									</div>
-									<div class="col">
-										<div class="space-cv">
+									<div class="col-9 mobile-align-items-center" style="font-size: 15px;">
+										<span class="col-sm-10 space-cv px-3">
 											<i class="fa-solid fa-user"></i>
 											<span>FUNiX</span>
-										</div>
-										<div class="space-cv">
+										</span>
+										<span class="col-sm-10 space-cv text-nowrap ps-3">
 											<i class="fa-regular fa-lightbulb"></i>
 											<span>Developer</span>
-										</div>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -622,27 +638,27 @@
 					<div class="col border">
 						<div class="row">
 							<div class="card">
-								<a href="./digital-cv.html">
-									<img src="./images/project_3.png" class="card-img-top">
-								</a>
+								<img src="./images/project_3.png" class="card-img-top">
 							</div>
-							<div class="card-body border-top">
-								TRANG WEB XEM TIN TỨC
-							</div>
-							<div class="card-body border-top">
-								<div class="row">
-									<div class=" mx-3 col-3 year">
+							<a href="./digital-cv.html">
+								<div class="card-body border-bottom">
+									TRANG WEB XEM TIN TỨC
+								</div>
+							</a>
+							<div class="card-body">
+								<div class="row align-items-center">
+									<div class="col-3 year mobile-align-items-center">
 										2021
 									</div>
-									<div class="col">
-										<div class="space-cv">
+									<div class="col-9 mobile-align-items-center" style="font-size: 15px;">
+										<span class="col-sm-10 space-cv px-3">
 											<i class="fa-solid fa-user"></i>
 											<span>FUNiX</span>
-										</div>
-										<div class="space-cv">
+										</span>
+										<span class="col-sm-10 space-cv text-nowrap ps-3">
 											<i class="fa-regular fa-lightbulb"></i>
 											<span>Developer</span>
-										</div>
+										</span>
 									</div>
 								</div>
 							</div>
@@ -679,20 +695,21 @@
 			</div>
 		</div>
 	</section>
+	<!-- insert icon, show text in laptop mode and hide text in mobile mode -->
 	<section id="footer" class="py-4 bg-grey">
 		<div class="container">
 			<div class="row footer-info text-center" style="font-size: 25px;">
 				<div class="col text-end">
 					<i class="fa-brands fa-facebook text-primary p-1"></i>
-					<span class="brands-footer">Facebook</span>
+					<span class="brands-footer" style="font-size: 20px;">Facebook</span>
 				</div>
 				<div class="col">
 					<i class="fa-brands fa-linkedin-in text-primary p-1"></i>
-					<span class="brands-footer">Linkedin</span>
+					<span class="brands-footer" style="font-size: 20px;">Linkedin</span>
 				</div>
 				<div class="col text-start">
 					<i class="fa-brands fa-github text-primary p-1"></i>
-					<span class="brands-footer">Github</span>
+					<span class="brands-footer" style="font-size: 20px;">Github</span>
 				</div>
 			</div>
 		</div>

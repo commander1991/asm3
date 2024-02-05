@@ -2,6 +2,7 @@
     border: 10px solid;
 }
 
+/* config css for laptop mode */
 @media only screen and (min-width: 992px) {
     .row1-height {
         height: 650px;

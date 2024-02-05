@@ -1,3 +1,4 @@
+/* config css for mobile mode */
 @media only screen and (min-width: 600px) and (max-width: 992px) {
     .container {
         max-width: 100%;

@@ -1,12 +1,13 @@
 * {
+    /* config for all page */
     margin: 0px;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     color: #6c757d;
-
 }
 
 #banner {
+    /* background will be expand screen*/
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(../images/banner.jpg);
@@ -17,10 +18,12 @@
 }
 
 .text-banner {
+    /* text go down for 100px */
     padding-top: 100px;
 }
 
 .container {
+    /* container the content */
     min-width: 750px;
     width: auto;
     height: auto;
@@ -35,6 +38,7 @@
 }
 
 .wrapper {
+    /* hiding info before submit email */
     position: relative;
     width: 400px;
     height: 400px;
@@ -42,10 +46,12 @@
 }
 
 .wrapper.active {
+    /* show personal info */
     display: contents
 }
 
 .wrapper.form-check-email.active {
+    /* if input availid, form check display none */
     display: none
 }
 
@@ -53,6 +59,7 @@
     display: none
 }
 
+/* hide text view more  */
 .hidden-text-1 {
     display: none;
     color: gray;
@@ -83,20 +90,21 @@
     color: gray;
 }
 
-/* .job-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-} */
-
 .col-job {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 20px;
 }
 
+.card-header {
+    background-color: white !important;
+    border-bottom: white !important;
+}
+
+/* seting only for laptop mode */
 @media only screen and (min-width: 992px) {
+
+    /* banner full width: screen; */
     .banner {
         position: relative;
         text-align: center;
@@ -113,6 +121,7 @@
         text-align: center;
     }
 
+    /* nav bar have name/avatar */
     .nav-bar {
         position: relative;
         display: inline;
@@ -123,15 +132,15 @@
         color: #6c757d;
     }
 
-
     .avatar {
         border: 15px solid;
         border-color: azure;
         border-radius: 50%;
         position: absolute;
         left: 50%;
-        width: 250px;
-        height: 250px;
+        top: 20%;
+        width: 200px;
+        height: 200px;
         transform: translate(-50%, -50%);
     }
 
@@ -149,6 +158,7 @@
         height: 370px;
     }
 
+    /* building level template for job/skill */
     .level-blue {
         display: inline-block;
         border: 3px solid;
@@ -170,13 +180,13 @@
     .year {
         border: 1px;
         background-color: deepskyblue;
-        padding: 10px 20px;
         border-radius: 50px;
         color: white;
         text-align: center;
         font-weight: bold;
     }
 
+    /* css for certificate */
     .mid-cer {
         border-left: 1px solid;
         color: #d6c08d;
@@ -185,7 +195,7 @@
     .img-cer {
         width: 200px;
     }
-    
+
     .font-cer {
         font-size: 14px;
     }
@@ -193,28 +203,4 @@
     .col-job {
         width: calc(33.33% - 20px);
     }
-
-    /* #first {
-        order: 1;
-    }
-
-    #second {
-        order: 4;
-    }
-
-    #third {
-        order: 2;
-    }
-
-    #fourth {
-        order: 5;
-    }
-
-    #fifth {
-        order: 6;
-    }
-
-    #sixth {
-        order: 3;
-    } */
 }
