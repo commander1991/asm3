@@ -40,7 +40,7 @@
 			<div class="banner">
 
 				<!-- Text centering within the banner -->
-				<div class="text-center text-banner">
+				<div class="text-banner">
 
 					<!-- Main heading with white color -->
 					<h1 style="color: white;">Phạm Đình Khôi</h1>
@@ -61,7 +61,7 @@
 	<section id="navigation">
 
 		<!-- Navigation Bar with small font size -->
-		<div class="nav-bar" style="font-size: small;">
+		<div class="nav-bar">
 
 			<!-- Unordered list for navigation items, centered horizontally -->
 			<ul class="nav justify-content-center ">
@@ -121,12 +121,15 @@
 	<section id="target-info">
 
 		<!-- Container for the section content -->
-		<div class="container">
+		<div class="container-fluid">
 
 			<!-- Row containing two columns: Target and Personal Information -->
 			<div class="row">
 
 				<!-- Column for Career Target -->
+				<div class="container">
+
+				</div>
 				<div class="col" id="target">
 
 					<!-- Section title for Career Target -->
@@ -214,7 +217,7 @@
 				<div class="row justify-content-center" id="job-container">
 
 					<!-- First Job Card -->
-					<div class="col-sm-6 col-lg-4 mb-4" id="first">
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="first">
 
 						<!-- Card with job information -->
 						<div class="card" style="width: 100%;">
@@ -277,7 +280,7 @@
 					</div>
 
 					<!-- Second Job Card -->
-					<div class="col-sm-6 col-lg-4 mb-4" id="second">
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="second">
 
 						<!-- Card with job information -->
 						<div class="card" style="width: 100%;">
@@ -343,7 +346,7 @@
 					</div>
 
 					<!-- Third Job Card -->
-					<div class="col-sm-6 col-lg-4 mb-4" id="third">
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="third">
 
 						<!-- Card with job information -->
 						<div class="card" style="width: 100%;">
@@ -400,7 +403,7 @@
 					</div>
 
 					<!-- Fourth Job Card -->
-					<div class="col-sm-6 col-lg-4 mb-4" id="fourth">
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="fourth">
 
 						<!-- Card with job information -->
 						<div class="card" style="width: 100%;">
@@ -467,7 +470,7 @@
 					</div>
 
 					<!-- Fifth Job Card -->
-					<div class="col-sm-6 col-lg-4 mb-4" id="fifth">
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="fifth">
 
 						<!-- Card with job information -->
 						<div class="card" style="width: 100%;">
@@ -525,7 +528,7 @@
 					</div>
 
 					<!-- Sixth Job Card -->
-					<div class="col-sm-6 col-lg-4 mb-4" id="sixth">
+					<div class="col-sm-12 col-md-6 col-lg-4 mb-4" id="sixth">
 
 						<!-- Card with job information -->
 						<div class="card" style="width: 100%;">
@@ -613,10 +616,10 @@
 			<div class="row">
 
 				<!-- Certificate Entry 1 -->
-				<div class="col" style="border-bottom: 1px solid; border-color: #d6c08d;">
+				<div class="col-sm-12 col-md-6 p-3" style="border-bottom: 1px solid; border-color: #d6c08d;">
 					<div class="row my-2">
 						<!-- Certificate Image -->
-						<div class="col-5 img-container">
+						<div class="col-5 pb-3 img-container">
 							<img src="./images/Cert_WEB.png" class="img-cer">
 						</div>
 						<!-- Certificate Information -->
@@ -630,10 +633,10 @@
 				</div>
 
 				<!-- Certificate Entry 2 -->
-				<div class="col" style="border-bottom: 1px solid; border-color: #d6c08d;">
+				<div class="col-sm-12 col-md-6 p-3" style="border-bottom: 1px solid; border-color: #d6c08d;">
 					<div class="row mid-cer">
 						<!-- Certificate Image -->
-						<div class="col-5">
+						<div class="col-5 pb-3">
 							<img src="./images/Cert_PRF.png" class="img-cer">
 						</div>
 						<!-- Certificate Information -->
@@ -645,36 +648,16 @@
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<!-- Additional Certificate Entry -->
-			<div class="row my-2">
-				<div class="col">
+				<!-- Certificate Entry 3 -->
+				<div class="col-sm-12 col-md-6 p-3">
 					<div class="row">
 						<!-- Certificate Image -->
 						<div class="col-5">
 							<img src="./images/Cert_DBI.png" class="img-cer">
 						</div>
 						<!-- Certificate Information -->
-						<div class="col-7 font-cer">
-							<strong>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</strong>
-							<br />
-							<span>- Chứng chỉ thuộc chương trình CCDN<br />
-								- GPA: 8.0
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<!-- Hidden Certificate Entry (currently hidden) -->
-				<div class="col" id="hidden-cer" style="visibility: hidden;">
-					<div class="row">
-						<!-- Certificate Image -->
-						<div class="col-5">
-							<img src="./images/Cert_DBI.png" class="img-cer">
-						</div>
-						<!-- Certificate Information -->
-						<div class="col-7 font-cer">
+						<div class="col-7 p-3 font-cer">
 							<strong>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</strong>
 							<br />
 							<span>- Chứng chỉ thuộc chương trình CCDN<br />
@@ -713,17 +696,18 @@
 							</a>
 							<!-- Project Details -->
 							<div class="card-body">
-								<div class="row align-items-center">
-									<div class="col-3 year mobile-align-items-center">
+								<div class="row align-items-right">
+									<div
+										class="ms-3 col-3 text-center border border-1 border-primary bg-primary rounded-pill text-white fw-bold year">
 										2021
 									</div>
-									<div class="col-9 mobile-align-items-center" style="font-size: 15px;">
+									<div class="col-8 mobile-align-items-center" style="font-size: 15px;">
 										<!-- Project Role and Organization -->
-										<span class="col-sm-10 space-cv px-3">
+										<span class="col-md-10 space-cv px-2">
 											<i class="fa-solid fa-user"></i>
 											<span>FUNiX</span>
 										</span>
-										<span class="col-sm-10 space-cv text-nowrap ps-3">
+										<span class="col-md-10 space-cv text-nowrap ps-2">
 											<i class="fa-regular fa-lightbulb"></i>
 											<span>Developer</span>
 										</span>
@@ -765,16 +749,18 @@
 								</div>
 							</a>
 							<div class="card-body">
-								<div class="row align-items-center">
-									<div class="col-3 year mobile-align-items-center">
+								<div class="row align-items-right">
+									<div
+										class="ms-3 col-3 text-center border border-1 border-primary bg-primary rounded-pill text-white fw-bold year">
 										2021
 									</div>
-									<div class="col-9 mobile-align-items-center" style="font-size: 15px;">
-										<span class="col-sm-10 space-cv px-3">
+									<div class="col-8 mobile-align-items-center" style="font-size: 15px;">
+										<!-- Project Role and Organization -->
+										<span class="col-md-10 space-cv px-2">
 											<i class="fa-solid fa-user"></i>
 											<span>FUNiX</span>
 										</span>
-										<span class="col-sm-10 space-cv text-nowrap ps-3">
+										<span class="col-md-10 space-cv text-nowrap ps-2">
 											<i class="fa-regular fa-lightbulb"></i>
 											<span>Developer</span>
 										</span>
@@ -822,16 +808,18 @@
 								</div>
 							</a>
 							<div class="card-body">
-								<div class="row align-items-center">
-									<div class="col-3 year mobile-align-items-center">
+								<div class="row align-items-right">
+									<div
+										class="ms-3 col-3 text-center border border-1 border-primary bg-primary rounded-pill text-white fw-bold year">
 										2021
 									</div>
-									<div class="col-9 mobile-align-items-center" style="font-size: 15px;">
-										<span class="col-sm-10 space-cv px-3">
+									<div class="col-8 mobile-align-items-center" style="font-size: 15px;">
+										<!-- Project Role and Organization -->
+										<span class="col-md-10 space-cv px-2">
 											<i class="fa-solid fa-user"></i>
 											<span>FUNiX</span>
 										</span>
-										<span class="col-sm-10 space-cv text-nowrap ps-3">
+										<span class="col-md-10 space-cv text-nowrap ps-2">
 											<i class="fa-regular fa-lightbulb"></i>
 											<span>Developer</span>
 										</span>
